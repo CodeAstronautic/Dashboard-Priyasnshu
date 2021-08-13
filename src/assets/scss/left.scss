@@ -1,0 +1,30 @@
+.Leftbody{
+    width: 60px;
+    height: 900px;
+    background-color: rgb(20,26,24);
+    padding: 15px 0 0 0px ;
+    // border-right: 1px solid #fff;
+
+    .icons{
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        color: rgb(247, 238, 226);
+        width: inherit;
+        height: 450px;
+        align-items: center;
+        margin-left: -3px;
+        justify-content: space-evenly;
+
+        li:nth-child(1){
+            transform: scale(1.25);
+            margin-left: -5px;
+        }
+        li:nth-child(2){
+            color:rgb(63, 158, 139);
+        }
+        li{
+            font-size: large;
+        }
+    }
+}
