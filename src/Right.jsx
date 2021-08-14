@@ -45,8 +45,8 @@ const Right = () => {
                             </span>
                         </section>
                         <div className="buttons">
-                            <span>FOLLOW</span>
-                            <span>SUBSCRIBE</span>
+                            <a href="#"><span>FOLLOW</span></a>
+                            <a href="#"><span>SUBSCRIBE</span></a>
                         </div>
                         <p className="desc">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. At molestias repellendus nisi minima, beatae sunt eligendi! Reiciendis, dolores incidunt. Veritatis reprehenderit praesentium iste autem qui recusandae eum quo obcaecati vero! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum perferendis non eveniet. Magni dicta quia ducimus vel ut commodi in eos ad et? Dicta, magni rem voluptatum vero labore at.
@@ -70,7 +70,7 @@ const Right = () => {
                         <div className="store">
                             <div className="heading">
                                 <span>Store</span>
-                                <span>See all</span>
+                                <a href="#"><span>See all</span></a>
                             </div>
                             <div className="body">
                                 <div className="cards">
@@ -92,7 +92,7 @@ const Right = () => {
                         <div className="photos">
                             <div className="heading">
                                 <span>Photos</span>
-                                <span>See all</span>
+                                <a href="#"><span>See all</span></a>
                             </div>
                             <div className="body">
                                 <div className="cards">
@@ -108,7 +108,7 @@ const Right = () => {
                         <div className="photos">
                             <div className="heading">
                                 <span>Photos</span>
-                                <span>See all</span>
+                                <a href="#"><span>See all</span></a>
                             </div>
                             <div className="body">
                                 <div className="cards">
@@ -145,17 +145,20 @@ const Right = () => {
                     <div className="content">
                         <div className="card">
                             <div className="name-row">
-                                <section>
-                                    <img src={profileimg} alt="" />
-                                </section>
-                                <section >
-                                    <p className="name">
-                                        Linda Jackson
-                                    </p>
-                                    <p className="id">
-                                        @linda3
-                                    </p>
-                                </section>
+                                <div className="name-row-left">
+                                    <section>
+                                        <a href="#"><img src={profileimg} alt="" /></a>
+                                    </section>
+                                    <section >
+                                        <p className="name">
+                                            Linda Jackson
+                                        </p>
+                                        <p className="id">
+                                            @linda3
+                                        </p>
+                                    </section>
+                                </div>
+                                
                                 <section>
                                     <span className="date">
                                         May 14, 2021
@@ -182,17 +185,20 @@ const Right = () => {
                         </div>
                         <div className="card">
                             <div className="name-row">
-                                <section>
-                                    <img src={profileimg} alt="" />
-                                </section>
-                                <section >
-                                    <p className="name">
-                                        Linda Jackson
-                                    </p>
-                                    <p className="id">
-                                        @linda3
-                                    </p>
-                                </section>
+                                <div className="name-row-left">
+                                    <section>
+                                    <a href="#"><img src={profileimg} alt="" /></a>
+                                    </section>
+                                    <section >
+                                        <p className="name">
+                                            Linda Jackson
+                                        </p>
+                                        <p className="id">
+                                            @linda3
+                                        </p>
+                                    </section>
+                                </div>
+                                
                                 <section>
                                     <span className="date">
                                         May 14, 2021

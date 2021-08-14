@@ -3,8 +3,14 @@
     height: 900px;
     background-color: rgb(20,26,24);
     padding: 15px 0 0 0px ;
+    position: fixed;
     // border-right: 1px solid #fff;
-
+    .mobile-icon{
+        position: absolute;
+        top: 0;
+        left: 0;
+        // display: none;
+    }
     .icons{
         display: flex;
         flex-direction: column;
@@ -28,3 +34,16 @@
         }
     }
 }
+
+@media (min-width:280px) and (max-width: 500px) {
+
+    .Leftbody{
+        display: none;
+
+        
+    }
+.mobile-icon{
+            display: block;
+        }
+ 
+ }

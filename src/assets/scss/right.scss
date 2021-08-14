@@ -1,6 +1,7 @@
 $green:rgb(61, 196, 169);
 
 .Rightbody{
+    margin-left: 60px;
     display: flex;
     flex-direction: column;
     // background:rgb(20,26,24);
@@ -62,7 +63,7 @@ $green:rgb(61, 196, 169);
         height: 265px;
 
         img{
-            width:calc( 100vw - 74px);
+            width:100%;
             height: 265px;
         }
     }
@@ -103,6 +104,7 @@ $green:rgb(61, 196, 169);
                 }
                 .attributes{
                     display: flex;
+                    flex-wrap: wrap;
                     justify-content: space-around;
                     padding: 0 100px;
                     color: rgb(138, 138, 138);
@@ -118,6 +120,7 @@ $green:rgb(61, 196, 169);
                     color:$green;
                     font-weight: bold;
                     margin-bottom: 20px;
+                    font-size: 1rem;
 
                     span{
 
@@ -136,8 +139,10 @@ $green:rgb(61, 196, 169);
                     line-height: 40px;
                     font-weight: bold;
                     margin-bottom: 25px;
-
-                    span{
+                    
+                    a{
+                        text-decoration: none;
+                        color: #000;
                         background-color:$green;
                         padding: 0 20px;
                         border-radius: 20px;
@@ -181,22 +186,26 @@ $green:rgb(61, 196, 169);
                         justify-content: space-between;
                         font-weight: bold;
                         margin-bottom: 20px;
-                        span:nth-child(2){
+                        a{
+                            text-decoration: none;
                             color: $green;
                         }
                     }
                     .body{
                         display: flex;
+                        
                         flex-direction: row;
+                        flex-wrap: wrap;
                         justify-content: space-between;
-
+                        
                         .cards{
-                            width: 120px;
-                            height: 140px;
+                            width: 30%;
+                            height: 27%;
+                            // margin-right: 10px;
 
                             img{
-                                width: 120px;
-                                height: 120px;
+                                width: 100%;
+                                height: 100%;
                             }
                             .text{
                                 font-size: small;
@@ -226,10 +235,10 @@ $green:rgb(61, 196, 169);
 
                 section{
                     cursor: pointer;
-                    margin: 0 40px;
+                    margin: 0 40px 0 0;
                     padding: 0 5px;
                     &:nth-child(1){
-                        margin-left: 0;
+                        
                         border-bottom: 2px solid $green;
                     }
                     .rh-icons{
@@ -249,28 +258,32 @@ $green:rgb(61, 196, 169);
             .content{
                 .card{
                     margin-bottom: 40px;
-
                     
                     .name-row{
                         display: flex;
                         flex-direction: row;
-                        margin-bottom: 10px;
+                        justify-content: space-between;
+                        .name-row-left{
+                            display: flex;
+                            flex-direction: row;
+                            margin-bottom: 10px;
 
-                        img{
-                            height: 50px;
-                            width: 50px;
-                            border-radius: 50%;
-                            margin-right: 10px;
-                        }
-                        .name{
-                            
-                            font-size: 15px;
-                            font-weight: 900;
-                            margin-bottom: 5px;
+                            img{
+                                height: 50px;
+                                width: 50px;
+                                border-radius: 50%;
+                                margin-right: 10px;
+                            }
+                            .name{
+                                
+                                font-size: 15px;
+                                font-weight: 900;
+                                margin-bottom: 5px;
+                            }
                         }
                         .date{
-                            position: relative;
-                            left: 730px;
+                            // position: relative;
+                            // left: 730px;
                             color: grey ;
                         }
                     }
@@ -326,3 +339,81 @@ $green:rgb(61, 196, 169);
         }
     }
 }
+
+
+@media (min-width:700px) and (max-width: 980px) {
+
+    .Rightbody{
+       .rbody{
+           .infoside{
+               max-width: 40% ;
+
+               .nameinfo{
+                   .buttons a{
+                       transform:scale(0.75)
+                   }
+                   .desc, .extras{
+                       margin: 0 auto;
+                       width: 90%;
+                   }
+               }
+               .gallery{
+                    max-width: 100% ;
+                    overflow-x:auto;
+
+                    .store{
+                        width: 90%;
+                        margin: 0 auto;
+                        margin-bottom:  40px;
+                        padding: 0 0;
+                    }
+                    .photos{
+                        width: 90%;
+                        margin: 0 auto;
+                        margin-bottom:  40px;
+                        padding: 0 0;
+                    }
+                    
+               }
+           }
+           .postside{
+               .rbody-header{
+                 section{
+                     margin-right: 20px;
+                 }
+               }
+           }
+       }
+    }
+}
+
+@media (min-width:280px) and (max-width: 700px) {
+
+   .Rightbody .rbody{
+        flex-direction: column;
+
+        .infoside{
+            width: 100%;
+        }
+    }
+
+}
+@media (min-width:280px) and (max-width: 500px) {
+
+    .Rightbody{
+        margin-left: 0;
+
+        .rbody{
+            .infoside{
+ 
+                .nameinfo{
+                    width: 100%;
+                    .buttons a{
+                        transform:scale(0.75)
+                    }
+                }
+            }
+        }    
+    }
+ 
+ }
