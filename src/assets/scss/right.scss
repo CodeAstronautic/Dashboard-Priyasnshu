@@ -18,6 +18,16 @@ $green:rgb(61, 196, 169);
         line-height: 60px;
         padding: 0 20px;
 
+        .floating{
+            display: none;     //ye wala popup button soche h rkhne ka
+            position: absolute;
+            top: 0;
+            left: 20px;
+            height: 35px;
+            img{
+                height: 100%;
+            }
+        }
         .leftpart, .rightpart{
             display: flex;
             flex-direction: row;
@@ -413,7 +423,12 @@ $green:rgb(61, 196, 169);
                     }
                 }
             }
-        }    
+        } 
+        .header{
+            .floating{
+                display: block;
+            }
+        }   
     }
  
  }

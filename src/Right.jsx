@@ -3,14 +3,19 @@ import headerimg from './assets/imgs/headerimg.jfif';
 import postimg from './assets/imgs/postimg.jpeg';
 import profileimg from './assets/imgs/profileimg.jpg';
 import galleryimg from './assets/imgs/galleryimg.jpg';
+import logo from './assets/imgs/logo.png';
 import * as Icons from 'react-bootstrap-icons';
 import * as IconFamily from 'react-icons/go';
 import './assets/scss/right.scss'
 
 const Right = () => {
+
     return (
         <div className="Rightbody">
             <div className="header">
+                <div className="floating" >
+                    <img src={logo} alt="logo" />
+                </div>
                 <div className="leftpart">
                     <p><Icons.Search /></p>
                     <input type="text" name="" id="" placeholder="Search Creator" />

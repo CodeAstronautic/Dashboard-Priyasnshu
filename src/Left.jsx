@@ -5,8 +5,6 @@ import './assets/scss/left.scss'
 
 const Left =()=>{
     return(
-    <>
-    <img className="mobile-icon" src={logo} alt="logo" />
         <div className="Leftbody">
             
             <ul className="icons">
@@ -20,7 +18,7 @@ const Left =()=>{
                 <li>< Icons.PlayCircle /></li>
             </ul>
         </div>
-        </>
+        
     );
 }
 
